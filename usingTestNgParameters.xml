@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name = "Login Suite">
+	<test name ="bothCorrect Test Cases">
+		<parameter name="username" value="dinesh.m@zenitus.com"></parameter>
+		<parameter name="password" value="SMdinesh@0808"></parameter>
+		<classes>
+		<class name ="usingTestNgParameters.bothCorrect"/>
+		</classes>
+	</test>
+	<test name ="both incorrect test case">
+		<parameter name="username" value="dinesh.m1@zenitus.com"></parameter>
+		<parameter name="password" value="SMdinesh@08088"></parameter>
+		<classes>
+		<class name ="usingTestNgParameters.bothIncorrect"/>
+		</classes>
+	</test>
+	<test name = "correct email test case">
+		<parameter name="username" value="dinesh.m@zenitus.com"></parameter>
+		<parameter name="password" value="SMdinesh@08088"></parameter>
+		<classes>
+		<class name ="usingTestNgParameters.correctEmail"/>
+		</classes>
+	</test>
+	<test name = "correct password test case">
+		<parameter name="username" value="dinesh.m1@zenitus.com"></parameter>
+		<parameter name="password" value="SMdinesh@0808"></parameter>
+		<classes>
+		<class name ="usingTestNgParameters.correctPassword"/>
+		</classes>
+</test>
+</suite>
